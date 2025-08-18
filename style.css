@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family: "Cinzel", serif;
+    /*font-family: "Cormorant Garamond", serif;*/
+}
+
+body{
+    background-image: url(./assets/Fundo\ limpo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#image-name-book{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    padding: 40px 0;
+}
+
+
+#catchphrase{
+    color: #caa24b;
+    font-family: 'Cinzel', serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 0px auto;
+    padding-bottom: 40px;
+    line-height: 1.5;
+    text-shadow: 10px 5px 10px #000000;
+}
+
+.content-book{
+    display: flex;
+    gap: 60px;
+    padding: 20px;
+    justify-content: center;
+    background-color: #2b1a12;
+    color: #ffffff;
+    padding: 60px;
+}
+
+.inside-the-book{
+    background-color: #2b1a12;
+    color: #ffffff;
+    padding: 20px;
+} 
+
+.image-and-sumary{
+    display: flex;
+    gap: 60px;
+    background-color: #2b1a12;
+    color: #ffffff;
+    padding: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#book-cover{
+   width: 350px; 
+   border: 4px solid #caa24b;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(202, 162, 75, 0.6);
+}
+
+h2 {
+    color: #caa24b;
+    font-family: 'Cinzel', serif;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#summary {
+    font-family: "Cormorant Garamond", serif;
+    text-align: left;
+    font-size: 26px;
+    list-style: none;
+}
+
+p {
+    font-family: "Cormorant Garamond", serif;
+    text-align: center;
+    font-size: 30px;  
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    color: #ffffff;
+    padding: 60px;
+}
+
+#photo-author{
+    width: 320px;
+    border: 4px solid #caa24b;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(202, 162, 75, 0.6);
+}
+
+#text{
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.3;
+}
+
+.buy{
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+#final-call{
+    color: #caa24b;
+    font-family: 'Cinzel', serif;
+    font-size: 35px;
+    text-align: center;
+    margin: 40px auto 20px;
+    max-width: 800px;
+    line-height: 1.6;
+    padding: 20px; 
+}
+
+#button{
+    display: inline-block;
+    background-color: #caa24b;
+    color: #2b1a12;
+    font-family: 'Cinzel', serif;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 16px 32px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    margin: 30px auto;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#button:hover {
+    background-color: #e0b85a;
+    transform: scale(1.05);
+}
+
+.testimonials{
+    background-color: #2b1a12;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.title-testimonials {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 15px;
+}
+
+
+
+.carousel{
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    height: auto;
+    background-color: #1e0f08;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(202, 162, 75, 0.4);
+    overflow: hidden;
+}
+
+.slide {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    font-size: 25px;
+    line-height: 1.6;
+}
+
+.slide.ativo {
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+}
+
+.balls {
+    margin-top: 10px;
+}
+
+.ball {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: 5px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.active-ball{
+    background-color: #caa24b;
+    opacity: 1;
+}
+
+.baseboard{
+    background-color: #2b1a12;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Georgia', serif;
+    
+    margin-top: 40px;
+    border-top: 2px solid #caa24b;
+}
+
+.social-media {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.social-media a {
+    color: #caa24b;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+#copyright{
+  font-size: 13px;
+}
+
+@media screen and (max-width: 800px) {
+    @media (max-width: 800px) {
+        
+  /* Imagem do nome do livro */
+  #image-name-book {
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 5px;
+  }
+
+  /* Frase de impacto */
+  #catchphrase {
+    font-size: 18px;
+    padding: 20px;
+  }
+
+  /* Sinopse */
+  .content-book {
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .inside-the-book{
+    padding: 20px 0 0 0;
+  }
+
+  .main-text{
+    font-size: 26px;
+  }
+
+  /* Imagem e Sumário */
+  .image-and-sumary {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  #book-cover {
+    width: 90%;
+    margin-left: 25px;
+  }
+
+  #summary {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  /* Sobre o autor */
+  .author {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  #photo-author {
+    margin-top: 20px;
+  }
+
+  #text {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  /* Frase final */
+  #final-call {
+    font-size: 22px;
+    padding: 10px;
+  }
+
+  /* Botão */
+  #button {
+    width: 80%;
+    max-width: 300px;
+    font-size: 18px;
+    padding: 14px 24px;
+  }
+}
+
+}
+
+
+   
