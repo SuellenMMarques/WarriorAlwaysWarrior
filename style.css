@@ -160,8 +160,6 @@ p {
   padding-bottom: 15px;
 }
 
-
-
 .carousel{
     width: 90%;
     max-width: 600px;
@@ -245,8 +243,7 @@ p {
   font-size: 13px;
 }
 
-@media screen and (max-width: 800px) {
-    @media (max-width: 800px) {
+@media screen and (max-width: 1000px) {
         
   /* Imagem do nome do livro */
   #image-name-book {
@@ -323,8 +320,6 @@ p {
     font-size: 18px;
     padding: 14px 24px;
   }
-}
-
 }
 
 
